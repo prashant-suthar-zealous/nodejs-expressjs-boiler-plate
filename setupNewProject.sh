@@ -25,3 +25,9 @@ pm2 delete pm2-logrotate
 
 # # Remove the script file itself
 # rm -- "$0"
+
+
+
+
+# Example: 
+# https://prashant-suthar-zealous.github.io/nodejs-expressjs-boiler-plate/

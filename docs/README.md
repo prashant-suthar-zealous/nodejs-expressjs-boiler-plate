@@ -6,7 +6,7 @@ This guide will walk you through deploying both backend and frontend projects us
 
 - Ensure that your server supports Node.js v18 (LTS) or above.
 - QA Server requires Node.js v18 or higher.
-- For backend, ensure you have a `.env` file for environment variables like `APP_NAME`, `PORT`, and `TIMEZONE`.
+- For backend, ensure you have a `.env` file for environment variables like `APP_NAME`, `PORT`
 
 ---
 
@@ -40,6 +40,9 @@ module.exports = {
   ]
 };
 ```
+
+> Make sure to replace `6000` with the actual port number for your backend project (e.g., 6000 series).
+
 
 ### 3. Start the Backend Project
 
@@ -76,10 +79,10 @@ Create a file named `start.sh` in the root directory of your frontend project wi
 #!/bin/bash
 # How to run:
 # pm2 start --name PROJECT-NAME-frontend-PORT ./start.sh
-npx serve -s build -p 5001
+npx serve -s build -p 5000
 ```
 
-> Make sure to replace `5001` with the actual port number for your frontend project (e.g., 5000/7000 series).
+> Make sure to replace `5000` with the actual port number for your frontend project (e.g., 5000 series).
 
 ### 3. Start the Frontend Project
 
@@ -89,7 +92,7 @@ After creating the `start.sh` file, run the following command to start the front
 pm2 start --name PROJECT-NAME-frontend-PORT ./start.sh
 ```
 
-Replace `PROJECT-NAME` with your frontend project’s name and `PORT` with the port number, for example, `5001`.
+Replace `PROJECT-NAME` with your frontend project’s name and `PORT` with the port number, for example, `5000`.
 
 
 ## PM2 Management
@@ -120,6 +123,13 @@ To manage your PM2 processes, you can use the following commands:
   ```bash
   pm2 delete all
   ```
+
+
+---
+
+## 🚀 Boilerplate Repository
+
+Please download the boilerplate repo from this [🔗 link](https://github.com/prashant-suthar-zealous/nodejs-expressjs-boiler-plate) and get started! 📥
 
 
 ## Important Notes for Codebase

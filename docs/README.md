@@ -1,13 +1,11 @@
----
+# Backend and Frontend Deployment with PM2 on QA Server
 
-# Backend and Frontend Deployment with PM2 on Zealous Server
-
-This guide will walk you through deploying both backend and frontend projects using PM2 on the Zealous Server.
+This guide will walk you through deploying both backend and frontend projects using PM2 on the QA Server.
 
 ## Prerequisites
 
 - Ensure that your server supports Node.js v18 (LTS) or above.
-- Zealous Server requires Node.js v18 or higher.
+- QA Server requires Node.js v18 or higher.
 - For backend, ensure you have a `.env` file for environment variables like `APP_NAME`, `PORT`, and `TIMEZONE`.
 
 ---
@@ -137,4 +135,4 @@ Since these configuration files (`start.sh` and `ecosystem.config.js`) are essen
 
 ## Conclusion
 
-Now both the backend and frontend projects should be running on the Zealous Server using PM2 configured. You can manage both projects through PM2 commands to ensure they're running smoothly.
+Now both the backend and frontend projects should be running on the QA Server using PM2 configured. You can manage both projects through PM2 commands to ensure they're running smoothly.
